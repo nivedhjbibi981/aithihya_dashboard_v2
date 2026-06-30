@@ -24,7 +24,7 @@ from collections import deque
 app = Flask(__name__)
 
 # ── Paste your Gemini API key here ───────────────────────────────────────────
-GEMINI_API_KEY = os.environ.get("AQ.Ab8RN6KIBelb3WiiW7u-4vVUTw0oBFy9DuADLSTkzX2Lyt-0Ng")
+GEMINI_API_KEY = os.environ.get["GEMINI_API_KEY"]
 
 # ── Shared state ──────────────────────────────────────────────────────────────
 alert_log = deque(maxlen=60)
